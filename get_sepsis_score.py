@@ -130,7 +130,7 @@ def get_sepsis_score(data1, Trained_model):
 		scores = Trained_model.predict_proba(X_test)
 		scores1 = scores[0][1]
 
-		if scores1>=0.3:
+		if scores1>=0.55:
 			labels1 = 1
 		else:
 			labels1 = 0
